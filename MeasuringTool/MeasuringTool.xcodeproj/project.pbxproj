@@ -9,11 +9,17 @@
 /* Begin PBXBuildFile section */
 		8C643E3E1F7A6F280085A542 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C643E3D1F7A6F280085A542 /* AppDelegate.m */; };
 		8C643E401F7A6F280085A542 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C643E3F1F7A6F280085A542 /* art.scnassets */; };
-		8C643E431F7A6F280085A542 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C643E421F7A6F280085A542 /* ViewController.m */; };
 		8C643E461F7A6F280085A542 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C643E441F7A6F280085A542 /* Main.storyboard */; };
 		8C643E481F7A6F280085A542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C643E471F7A6F280085A542 /* Assets.xcassets */; };
 		8C643E4B1F7A6F280085A542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C643E491F7A6F280085A542 /* LaunchScreen.storyboard */; };
 		8C643E4E1F7A6F280085A542 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C643E4D1F7A6F280085A542 /* main.m */; };
+		8C643E561F7A80A10085A542 /* SimpleBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C643E551F7A80A10085A542 /* SimpleBoxViewController.m */; };
+		8C643E591F7A8A950085A542 /* DisplayingTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C643E581F7A8A950085A542 /* DisplayingTextViewController.m */; };
+		8C643E5C1F7A913C0085A542 /* MultipleObjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C643E5B1F7A913C0085A542 /* MultipleObjectsViewController.m */; };
+		8C643E621F7A956C0085A542 /* bricks.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8C643E601F7A948A0085A542 /* bricks.jpeg */; };
+		8C643E631F7A956C0085A542 /* earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C643E611F7A94A20085A542 /* earth.jpg */; };
+		8C643E661F7A968E0085A542 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C643E651F7A968E0085A542 /* ViewController.m */; };
+		8C643E6B1F7A97030085A542 /* SimpleBoxWithTouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C643E6A1F7A97030085A542 /* SimpleBoxWithTouchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +27,23 @@
 		8C643E3C1F7A6F280085A542 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8C643E3D1F7A6F280085A542 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8C643E3F1F7A6F280085A542 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		8C643E411F7A6F280085A542 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8C643E421F7A6F280085A542 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8C643E451F7A6F280085A542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C643E471F7A6F280085A542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C643E4A1F7A6F280085A542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C643E4C1F7A6F280085A542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C643E4D1F7A6F280085A542 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8C643E541F7A80A10085A542 /* SimpleBoxViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleBoxViewController.h; sourceTree = "<group>"; };
+		8C643E551F7A80A10085A542 /* SimpleBoxViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleBoxViewController.m; sourceTree = "<group>"; };
+		8C643E571F7A8A950085A542 /* DisplayingTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayingTextViewController.h; sourceTree = "<group>"; };
+		8C643E581F7A8A950085A542 /* DisplayingTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayingTextViewController.m; sourceTree = "<group>"; };
+		8C643E5A1F7A913C0085A542 /* MultipleObjectsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultipleObjectsViewController.h; sourceTree = "<group>"; };
+		8C643E5B1F7A913C0085A542 /* MultipleObjectsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultipleObjectsViewController.m; sourceTree = "<group>"; };
+		8C643E601F7A948A0085A542 /* bricks.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bricks.jpeg; sourceTree = "<group>"; };
+		8C643E611F7A94A20085A542 /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpg; sourceTree = "<group>"; };
+		8C643E641F7A968E0085A542 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = /Users/me/Desktop/Workspace/iOS/ARKit/MeasuringTool/MeasuringTool/MeasuringTool/ViewController.h; sourceTree = "<absolute>"; };
+		8C643E651F7A968E0085A542 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = /Users/me/Desktop/Workspace/iOS/ARKit/MeasuringTool/MeasuringTool/MeasuringTool/ViewController.m; sourceTree = "<absolute>"; };
+		8C643E691F7A97030085A542 /* SimpleBoxWithTouchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleBoxWithTouchViewController.h; sourceTree = "<group>"; };
+		8C643E6A1F7A97030085A542 /* SimpleBoxWithTouchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleBoxWithTouchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +78,12 @@
 			children = (
 				8C643E3C1F7A6F280085A542 /* AppDelegate.h */,
 				8C643E3D1F7A6F280085A542 /* AppDelegate.m */,
+				8C643E681F7A96E30085A542 /* SimpleBoxWithTouch */,
+				8C643E671F7A96B90085A542 /* MeasuringTool */,
+				8C643E5F1F7A946F0085A542 /* SimpleBox */,
+				8C643E5E1F7A945D0085A542 /* DisplayingText */,
+				8C643E5D1F7A94390085A542 /* MultipleObjects */,
 				8C643E3F1F7A6F280085A542 /* art.scnassets */,
-				8C643E411F7A6F280085A542 /* ViewController.h */,
-				8C643E421F7A6F280085A542 /* ViewController.m */,
 				8C643E441F7A6F280085A542 /* Main.storyboard */,
 				8C643E471F7A6F280085A542 /* Assets.xcassets */,
 				8C643E491F7A6F280085A542 /* LaunchScreen.storyboard */,
@@ -72,6 +91,53 @@
 				8C643E4D1F7A6F280085A542 /* main.m */,
 			);
 			path = MeasuringTool;
+			sourceTree = "<group>";
+		};
+		8C643E5D1F7A94390085A542 /* MultipleObjects */ = {
+			isa = PBXGroup;
+			children = (
+				8C643E601F7A948A0085A542 /* bricks.jpeg */,
+				8C643E611F7A94A20085A542 /* earth.jpg */,
+				8C643E5A1F7A913C0085A542 /* MultipleObjectsViewController.h */,
+				8C643E5B1F7A913C0085A542 /* MultipleObjectsViewController.m */,
+			);
+			path = MultipleObjects;
+			sourceTree = "<group>";
+		};
+		8C643E5E1F7A945D0085A542 /* DisplayingText */ = {
+			isa = PBXGroup;
+			children = (
+				8C643E571F7A8A950085A542 /* DisplayingTextViewController.h */,
+				8C643E581F7A8A950085A542 /* DisplayingTextViewController.m */,
+			);
+			path = DisplayingText;
+			sourceTree = "<group>";
+		};
+		8C643E5F1F7A946F0085A542 /* SimpleBox */ = {
+			isa = PBXGroup;
+			children = (
+				8C643E541F7A80A10085A542 /* SimpleBoxViewController.h */,
+				8C643E551F7A80A10085A542 /* SimpleBoxViewController.m */,
+			);
+			path = SimpleBox;
+			sourceTree = "<group>";
+		};
+		8C643E671F7A96B90085A542 /* MeasuringTool */ = {
+			isa = PBXGroup;
+			children = (
+				8C643E641F7A968E0085A542 /* ViewController.h */,
+				8C643E651F7A968E0085A542 /* ViewController.m */,
+			);
+			path = MeasuringTool;
+			sourceTree = "<group>";
+		};
+		8C643E681F7A96E30085A542 /* SimpleBoxWithTouch */ = {
+			isa = PBXGroup;
+			children = (
+				8C643E691F7A97030085A542 /* SimpleBoxWithTouchViewController.h */,
+				8C643E6A1F7A97030085A542 /* SimpleBoxWithTouchViewController.m */,
+			);
+			path = SimpleBoxWithTouch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +198,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C643E621F7A956C0085A542 /* bricks.jpeg in Resources */,
+				8C643E631F7A956C0085A542 /* earth.jpg in Resources */,
 				8C643E401F7A6F280085A542 /* art.scnassets in Resources */,
 				8C643E4B1F7A6F280085A542 /* LaunchScreen.storyboard in Resources */,
 				8C643E481F7A6F280085A542 /* Assets.xcassets in Resources */,
@@ -146,9 +214,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C643E431F7A6F280085A542 /* ViewController.m in Sources */,
+				8C643E661F7A968E0085A542 /* ViewController.m in Sources */,
+				8C643E6B1F7A97030085A542 /* SimpleBoxWithTouchViewController.m in Sources */,
+				8C643E591F7A8A950085A542 /* DisplayingTextViewController.m in Sources */,
 				8C643E4E1F7A6F280085A542 /* main.m in Sources */,
+				8C643E561F7A80A10085A542 /* SimpleBoxViewController.m in Sources */,
 				8C643E3E1F7A6F280085A542 /* AppDelegate.m in Sources */,
+				8C643E5C1F7A913C0085A542 /* MultipleObjectsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
