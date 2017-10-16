@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C2A76711F94C62D0024E660 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A76701F94C62D0024E660 /* ViewController.m */; };
+		8C2A76751F94E5D60024E660 /* DetectingPlanesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A76741F94E5D60024E660 /* DetectingPlanesViewController.m */; };
 		8C643E3E1F7A6F280085A542 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C643E3D1F7A6F280085A542 /* AppDelegate.m */; };
 		8C643E401F7A6F280085A542 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C643E3F1F7A6F280085A542 /* art.scnassets */; };
 		8C643E461F7A6F280085A542 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C643E441F7A6F280085A542 /* Main.storyboard */; };
@@ -18,12 +20,15 @@
 		8C643E5C1F7A913C0085A542 /* MultipleObjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C643E5B1F7A913C0085A542 /* MultipleObjectsViewController.m */; };
 		8C643E621F7A956C0085A542 /* bricks.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8C643E601F7A948A0085A542 /* bricks.jpeg */; };
 		8C643E631F7A956C0085A542 /* earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C643E611F7A94A20085A542 /* earth.jpg */; };
-		8C643E661F7A968E0085A542 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C643E651F7A968E0085A542 /* ViewController.m */; };
 		8C643E6B1F7A97030085A542 /* SimpleBoxWithTouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C643E6A1F7A97030085A542 /* SimpleBoxWithTouchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8C643E391F7A6F280085A542 /* MeasuringTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeasuringTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C2A766F1F94C6260024E660 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8C2A76701F94C62D0024E660 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8C2A76731F94E5D60024E660 /* DetectingPlanesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetectingPlanesViewController.h; sourceTree = "<group>"; };
+		8C2A76741F94E5D60024E660 /* DetectingPlanesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetectingPlanesViewController.m; sourceTree = "<group>"; };
+		8C643E391F7A6F280085A542 /* ARKit Tutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARKit Tutorials.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C643E3C1F7A6F280085A542 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8C643E3D1F7A6F280085A542 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8C643E3F1F7A6F280085A542 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -40,8 +45,6 @@
 		8C643E5B1F7A913C0085A542 /* MultipleObjectsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultipleObjectsViewController.m; sourceTree = "<group>"; };
 		8C643E601F7A948A0085A542 /* bricks.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bricks.jpeg; sourceTree = "<group>"; };
 		8C643E611F7A94A20085A542 /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpg; sourceTree = "<group>"; };
-		8C643E641F7A968E0085A542 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = /Users/me/Desktop/Workspace/iOS/ARKit/MeasuringTool/MeasuringTool/MeasuringTool/ViewController.h; sourceTree = "<absolute>"; };
-		8C643E651F7A968E0085A542 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = /Users/me/Desktop/Workspace/iOS/ARKit/MeasuringTool/MeasuringTool/MeasuringTool/ViewController.m; sourceTree = "<absolute>"; };
 		8C643E691F7A97030085A542 /* SimpleBoxWithTouchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleBoxWithTouchViewController.h; sourceTree = "<group>"; };
 		8C643E6A1F7A97030085A542 /* SimpleBoxWithTouchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleBoxWithTouchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,10 +60,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C2A76721F94E5370024E660 /* DetectingPlanes */ = {
+			isa = PBXGroup;
+			children = (
+				8C2A76731F94E5D60024E660 /* DetectingPlanesViewController.h */,
+				8C2A76741F94E5D60024E660 /* DetectingPlanesViewController.m */,
+			);
+			path = DetectingPlanes;
+			sourceTree = "<group>";
+		};
 		8C643E301F7A6F280085A542 = {
 			isa = PBXGroup;
 			children = (
-				8C643E3B1F7A6F280085A542 /* MeasuringTool */,
+				8C643E3B1F7A6F280085A542 /* ARKitTutorials */,
 				8C643E3A1F7A6F280085A542 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,18 +80,19 @@
 		8C643E3A1F7A6F280085A542 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8C643E391F7A6F280085A542 /* MeasuringTool.app */,
+				8C643E391F7A6F280085A542 /* ARKit Tutorials.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8C643E3B1F7A6F280085A542 /* MeasuringTool */ = {
+		8C643E3B1F7A6F280085A542 /* ARKitTutorials */ = {
 			isa = PBXGroup;
 			children = (
+				8C2A76721F94E5370024E660 /* DetectingPlanes */,
 				8C643E3C1F7A6F280085A542 /* AppDelegate.h */,
 				8C643E3D1F7A6F280085A542 /* AppDelegate.m */,
 				8C643E681F7A96E30085A542 /* SimpleBoxWithTouch */,
-				8C643E671F7A96B90085A542 /* MeasuringTool */,
+				8C643E671F7A96B90085A542 /* ARKitTutorials */,
 				8C643E5F1F7A946F0085A542 /* SimpleBox */,
 				8C643E5E1F7A945D0085A542 /* DisplayingText */,
 				8C643E5D1F7A94390085A542 /* MultipleObjects */,
@@ -90,7 +103,7 @@
 				8C643E4C1F7A6F280085A542 /* Info.plist */,
 				8C643E4D1F7A6F280085A542 /* main.m */,
 			);
-			path = MeasuringTool;
+			path = ARKitTutorials;
 			sourceTree = "<group>";
 		};
 		8C643E5D1F7A94390085A542 /* MultipleObjects */ = {
@@ -122,13 +135,13 @@
 			path = SimpleBox;
 			sourceTree = "<group>";
 		};
-		8C643E671F7A96B90085A542 /* MeasuringTool */ = {
+		8C643E671F7A96B90085A542 /* ARKitTutorials */ = {
 			isa = PBXGroup;
 			children = (
-				8C643E641F7A968E0085A542 /* ViewController.h */,
-				8C643E651F7A968E0085A542 /* ViewController.m */,
+				8C2A76701F94C62D0024E660 /* ViewController.m */,
+				8C2A766F1F94C6260024E660 /* ViewController.h */,
 			);
-			path = MeasuringTool;
+			path = ARKitTutorials;
 			sourceTree = "<group>";
 		};
 		8C643E681F7A96E30085A542 /* SimpleBoxWithTouch */ = {
@@ -143,9 +156,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8C643E381F7A6F280085A542 /* MeasuringTool */ = {
+		8C643E381F7A6F280085A542 /* ARKit Tutorials */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8C643E511F7A6F280085A542 /* Build configuration list for PBXNativeTarget "MeasuringTool" */;
+			buildConfigurationList = 8C643E511F7A6F280085A542 /* Build configuration list for PBXNativeTarget "ARKit Tutorials" */;
 			buildPhases = (
 				8C643E351F7A6F280085A542 /* Sources */,
 				8C643E361F7A6F280085A542 /* Frameworks */,
@@ -155,9 +168,9 @@
 			);
 			dependencies = (
 			);
-			name = MeasuringTool;
+			name = "ARKit Tutorials";
 			productName = MeasuringTool;
-			productReference = 8C643E391F7A6F280085A542 /* MeasuringTool.app */;
+			productReference = 8C643E391F7A6F280085A542 /* ARKit Tutorials.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -175,7 +188,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8C643E341F7A6F280085A542 /* Build configuration list for PBXProject "MeasuringTool" */;
+			buildConfigurationList = 8C643E341F7A6F280085A542 /* Build configuration list for PBXProject "ARKit Tutorials" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -188,7 +201,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8C643E381F7A6F280085A542 /* MeasuringTool */,
+				8C643E381F7A6F280085A542 /* ARKit Tutorials */,
 			);
 		};
 /* End PBXProject section */
@@ -214,9 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C643E661F7A968E0085A542 /* ViewController.m in Sources */,
 				8C643E6B1F7A97030085A542 /* SimpleBoxWithTouchViewController.m in Sources */,
+				8C2A76711F94C62D0024E660 /* ViewController.m in Sources */,
 				8C643E591F7A8A950085A542 /* DisplayingTextViewController.m in Sources */,
+				8C2A76751F94E5D60024E660 /* DetectingPlanesViewController.m in Sources */,
 				8C643E4E1F7A6F280085A542 /* main.m in Sources */,
 				8C643E561F7A80A10085A542 /* SimpleBoxViewController.m in Sources */,
 				8C643E3E1F7A6F280085A542 /* AppDelegate.m in Sources */,
@@ -356,9 +370,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T24WE95KS9;
-				INFOPLIST_FILE = MeasuringTool/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ARKitTutorials/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = elie.MeasuringTool;
+				PRODUCT_BUNDLE_IDENTIFIER = appsandgamesinc.ARKitTutorials;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -370,9 +384,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T24WE95KS9;
-				INFOPLIST_FILE = MeasuringTool/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ARKitTutorials/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = elie.MeasuringTool;
+				PRODUCT_BUNDLE_IDENTIFIER = appsandgamesinc.ARKitTutorials;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -381,7 +395,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8C643E341F7A6F280085A542 /* Build configuration list for PBXProject "MeasuringTool" */ = {
+		8C643E341F7A6F280085A542 /* Build configuration list for PBXProject "ARKit Tutorials" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8C643E4F1F7A6F280085A542 /* Debug */,
@@ -390,7 +404,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8C643E511F7A6F280085A542 /* Build configuration list for PBXNativeTarget "MeasuringTool" */ = {
+		8C643E511F7A6F280085A542 /* Build configuration list for PBXNativeTarget "ARKit Tutorials" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8C643E521F7A6F280085A542 /* Debug */,

@@ -41,7 +41,7 @@
     
     [scene.rootNode addChildNode:node];
     
-    UITapGestureRecognizer *tapGuestRecognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapped)];
+    UITapGestureRecognizer *tapGuestRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapped:)];
     [self.sceneView addGestureRecognizer:tapGuestRecognizer];
     
 
@@ -49,13 +49,20 @@
     self.sceneView.scene = scene;
 }
 
-- (void)tapped:(UITapGestureRecognizer *)sender{
+-(void)tapped:(UIGestureRecognizer *)sender {
     
-    UIView *sceneView = self.view;
-    CGPoint touchLocation = [sender locationInView:sceneView];
-    UIView *touchedView = [sceneView hitTest:touchLocation withEvent:nil];
+    CGPoint touchLocation = [sender locationInView:sender.view];
+    NSArray *hitResults = [self.sceneView hitTest:touchLocation options:nil];
+    NSMutableArray *mutableArray = [[NSMutableArray alloc] init];
     
-    if([touchedView isKindOfClass:[UIImageView class]]){
+    if ([hitResults count] != 0) {
+        SCNNode *node = [[SCNNode alloc]init];
+        [mutableArray addObjectsFromArray:hitResults];
+        [mutableArray addObject:node];
+        
+        SCNMaterial *material = [[SCNMaterial alloc] init];
+        material.diffuse.contents = [UIColor greenColor];
+        node.geometry.firstMaterial = material;
         
         
     }
@@ -83,15 +90,5 @@
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc that aren't in use.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
