@@ -88,9 +88,9 @@
 		8C643E3B1F7A6F280085A542 /* ARKitTutorials */ = {
 			isa = PBXGroup;
 			children = (
-				8C2A76721F94E5370024E660 /* DetectingPlanes */,
 				8C643E3C1F7A6F280085A542 /* AppDelegate.h */,
 				8C643E3D1F7A6F280085A542 /* AppDelegate.m */,
+				8C2A76721F94E5370024E660 /* DetectingPlanes */,
 				8C643E681F7A96E30085A542 /* SimpleBoxWithTouch */,
 				8C643E671F7A96B90085A542 /* ARKitTutorials */,
 				8C643E5F1F7A946F0085A542 /* SimpleBox */,

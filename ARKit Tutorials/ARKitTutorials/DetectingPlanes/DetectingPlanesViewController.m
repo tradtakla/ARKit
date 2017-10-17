@@ -11,6 +11,7 @@
 @interface DetectingPlanesViewController () <ARSCNViewDelegate>
 
 @property (nonatomic, strong) ARSCNView *sceneView;
+@property (nonatomic, strong) UILabel *label;
 
 @end
 
@@ -21,9 +22,16 @@
     
     
     self.sceneView = [[ARSCNView alloc] initWithFrame:self.view.frame];
+    self.label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.sceneView.frame.size.width, 44)];
+    self.label.center = self.sceneView.center;
+    self.label.textAlignment = NSTextAlignmentCenter;
+    self.label.textColor = [UIColor whiteColor];
+    self.label.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
+    self.label.alpha = 1;
     
-    self.sceneView.debugOptions = ARSCNDebugOptionShowWorldOrigin;
-    self.sceneView.debugOptions = ARSCNDebugOptionShowFeaturePoints;
+    [self.sceneView addSubview:self.label];
+    
+    self.sceneView.debugOptions = ARSCNDebugOptionShowWorldOrigin | ARSCNDebugOptionShowFeaturePoints;
     
     [self.view addSubview:self.sceneView];
     
@@ -34,10 +42,10 @@
     self.sceneView.showsStatistics = YES;
     
     
-    SCNScene *scene = [[SCNScene alloc] init];
-    
-    
-    self.sceneView.scene = scene;
+//    SCNScene *scene = [[SCNScene alloc] init];
+//
+//
+//    self.sceneView.scene = scene;
     
 }
 
@@ -61,11 +69,17 @@
     [self.sceneView.session pause];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)renderer:(id<SCNSceneRenderer>)renderer didAddNode:(SCNNode *)node forAnchor:(ARAnchor *)anchor
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.label.text = @"Plane Detected";
+        
+        [UIView animateWithDuration:3.0 animations:^{
+            self.label.alpha = 1;
+        } completion:^(BOOL finished) {
+            self.label.alpha = 0;
+        }];
+    });
 }
-
 
 @end

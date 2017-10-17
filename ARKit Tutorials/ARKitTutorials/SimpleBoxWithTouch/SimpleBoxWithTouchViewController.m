@@ -50,21 +50,15 @@
 }
 
 -(void)tapped:(UIGestureRecognizer *)sender {
-    
+
     CGPoint touchLocation = [sender locationInView:sender.view];
-    NSArray *hitResults = [self.sceneView hitTest:touchLocation options:nil];
-    NSMutableArray *mutableArray = [[NSMutableArray alloc] init];
+    NSArray<SCNHitTestResult *>* hitResults = [self.sceneView hitTest:touchLocation options:nil];
+
+    NSLog(@"hittest: %@: ", hitResults);
     
     if ([hitResults count] != 0) {
-        SCNNode *node = [[SCNNode alloc]init];
-        [mutableArray addObjectsFromArray:hitResults];
-        [mutableArray addObject:node];
-        
-        SCNMaterial *material = [[SCNMaterial alloc] init];
-        material.diffuse.contents = [UIColor greenColor];
-        node.geometry.firstMaterial = material;
-        
-        
+        SCNNode *node = [hitResults firstObject].node;
+        node.geometry.firstMaterial.diffuse.contents = [UIColor greenColor];
     }
 }
 
