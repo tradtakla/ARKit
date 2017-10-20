@@ -54,7 +54,7 @@
     CGPoint touchLocation = [sender locationInView:sender.view];
     NSArray<SCNHitTestResult *>* hitResults = [self.sceneView hitTest:touchLocation options:nil];
 
-    NSLog(@"hittest: %@: ", hitResults);
+//    NSLog(@"hittest: %@: ", hitResults);
     
     if ([hitResults count] != 0) {
         SCNNode *node = [hitResults firstObject].node;

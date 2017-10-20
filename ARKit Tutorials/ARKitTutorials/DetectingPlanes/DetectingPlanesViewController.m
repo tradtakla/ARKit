@@ -41,12 +41,6 @@
     // Show statistics such as fps and timing information
     self.sceneView.showsStatistics = YES;
     
-    
-//    SCNScene *scene = [[SCNScene alloc] init];
-//
-//
-//    self.sceneView.scene = scene;
-    
 }
 
 
